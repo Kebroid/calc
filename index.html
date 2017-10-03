@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IELTS Calculator | Built for IELTS Zone by Azimjon Pulatov</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/boots.css">
+	<link rel="stylesheet" type="text/css" href="assets/main.css">
+	<link href="assets/fontLato.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+
+	
+		<div id="intro">
+			<img src="assets/logo.png" class="logo">
+			<div class="center">
+				<p class="typing"></p>
+			</div>
+			<button class="btn btnToStart" onclick="show1()" onsubmit="show1()">start</button>
+		</div> 
+	
+		<div id="listening">
+			<div class="center2">
+				<p class="info">Listening out of 40</p>
+				<input type="number" max="40" min="0" id="score1" autocomplete="off" autofocus="">
+				<button class="btn btnToStart2" onclick="show2()" onsubmit="show2()">next</button>
+			</div>
+		</div>
+
+		<div id="reading">
+			<div class="center2">
+				<p class="info">Reading out of 40</p>
+				<input type="number" max="40" min="0" id="score2" autocomplete="off"><br>
+				<input type="checkbox" id="general"><label for="general">general</label>
+				<button class="btn btnToStart2" onclick="show3()" onsubmit="show3()">next</button>
+			</div>
+		</div>
+
+		<div id="writing">
+			<div class="center2">
+				<p class="info">Writing out of 9.0</p>
+				<input type="number" max="9" min="0" id="score3" autocomplete="off">
+				<button class="btn btnToStart2" onclick="show4()" onsubmit="show4()">next</button>
+			</div>
+		</div>
+
+		<div id="speaking">
+			<div class="center2">
+				<p class="info">Speaking out of 9.0</p>
+				<input type="number" max="9" min="0" id="score4" autocomplete="off">
+				<button class="btn btnToStart2" onclick="calculate()" onsubmit="calculate()">calculate</button>
+			</div>
+		</div>
+
+		<div id="results">
+			<div class="center2">
+				<table>
+					<tr>
+						<th>Listening</th>
+						<td id="scoreListening">8</td>
+					</tr>
+					<tr>
+						<th>Reading</th>
+						<td id="scoreReading">7.5</td>
+					</tr>
+					<tr>
+						<th>Writing</th>
+						<td id="scoreWriting">6</td>
+					</tr>
+					<tr>
+						<th>Speaking</th>
+						<td id="scoreSpeaking">7</td>
+					</tr>
+					<tr>
+						<th style="color: white">Overall</th>
+						<td id="scoreOverall">7</td>
+					</tr>
+				</table>
+				<br><br>
+				<a href="index.html" style="font-size: 24px;color: yellow">Back</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/main.js"></script>
+</body>
+</html>
